@@ -19,7 +19,7 @@ var activeFilter = 0;
             	source: "tags.php"
         	});
         	$.ajaxSetup({cache:false});
-			$.get( "http://www.sayak.byethost33.com/codeGallery/list.php", {search : "" , filter : activeFilter} ).done(
+			$.get( "www.sayak.byethost33.com/codeGallery/list.php", {search : "" , filter : activeFilter} ).done(
 					function(data){
 						var parseData = JSON.parse(data);
 						$('.article-box-container').html(parseData);
