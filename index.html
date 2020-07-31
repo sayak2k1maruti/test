@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sayak's</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" /><meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/index.css">
+        <script src="JS/jquery.js"></script>
+        <script src="JS/pace.js"></script>
+        <script src="JS/script.js"></script>
+        <script src="JS/index.js"></script>
+        <script src="https://kit.fontawesome.com/6fd5658949.js" crossorigin="anonymous"></script>
+    </head>
+    <body onscroll="scrollFunction()">
+        <div id="load">
+            <h1>Loading...</h1>
+        </div>
+        <div id="content">
+        <header id = "navHeader" class = "backgroundContainer" onmousemove="move()" >
+            <nav class="navigationBar">
+                <h1 class="navigationImage"><a href ="" style="color: inherit;">@sayak</a></h1>
+                <a class = "navigationMenu" href="">Home</a>
+                <a class = "navigationMenu" href="">CodeGallery</a>
+                <a class = "navigationMenu" href="">ContactMe</a>
+                <div id = "hamburger"  onclick="openNavigation()" class="hamburger hamburger--spin" >
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+                <div class="navigationDrawer">
+                    <ul>
+                        <li><a href="">About</a></li>
+
+                        <li><a href="">Explore</a></li>
+
+                        <li><a href="">CodeGallery</a></li>
+                    </ul>
+                <br/>
+                <br/>
+                <br/>
+                <hr/>
+                <a href="https://github.com/sayak2k1maruti" aria-label="GitHub"><svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="github svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+                <a href="" aria-label="FaceBook"><svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="facebook svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+                <a href="https://www.youtube.com/channel/UCALBvdPeMkBqZmsaWBd0hng" aria-label="youtube"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="youtube svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+                <a href="" aria-label="instagram"><svg  aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="instagram svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                </div>
+            </nav>
+            <section class="welcomeText">
+                <div class="animatingBackground1">
+
+                </div>
+                <div class="animatingBackground2">
+
+                </div>
+                <h1><span class = "w1">H</span><span class = "w2">e</span><span class = "w3">l</span><span class = "w4">l</span><span class = "w5">o</span><span class = "w6">,</span><span class = "w7">&nbsp;</span><span class = "w8">I</span><span class = "w9">&nbsp;</span><span class = "w10">a</span><span class = "w11">m</span><span class = "w12">&nbsp;</span><span class = "w13">S</span><span class = "w14">a</span><span class = "w15">y</span><span class = "w16">a</span><span class = "w17">k</span></h1>
+                <p>I love coding</p>
+            </section>
+        </header>
+        <main  onclick="closeDrawer()">
+            <section id="aboutMe">
+                <h1>Hello There</h1>
+                <p>I am a student & I love to code.I read in National Institute of Technology Durgapur,as a student of Electronics Engineering.I shall post various topics on coading in this website.
+                Visit <a href="codeGallery/index.html">CodeGallery</a> and find some of my posts.
+                Feel free to <a href="mailto:sayakdas2k1@gmail.com">contact me</a>.
+                Please take a complete tour into my site.
+            </p>
+            </section>
+            <div id="lappi-container">
+                <div id="lappi-frame"></div>
+                    <iframe src="resume/index.html" border="1" allowfullscreen>
+                    </iframe>
+                <svg id="launchResume" enable-background="new 0 0 32 32" height="32px"  version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Fullscreen_Exit"><path d="M22.008,13.007h9C31.576,13.007,32,12.559,32,11.992c0-0.568-0.424-0.985-0.992-0.984h-8V2.992   c0-0.568-0.432-1-1-1c-0.568,0-1,0.432-1,1v9c0,0.003,0.001,0.005,0.001,0.007c0,0.003-0.001,0.005-0.001,0.008   C21.008,12.565,21.45,13.008,22.008,13.007z" fill="currentColor"/><path d="M9.984,2C9.417,2,9,2.425,9,2.992v8H0.985c-0.568,0-1,0.432-1,1c0,0.568,0.432,1,1,1h9   c0.003,0,0.005-0.001,0.007-0.001c0.003,0,0.005,0.001,0.008,0.001c0.558,0,1-0.442,1-1v-9C11,2.425,10.552,2.001,9.984,2z" fill="currentColor"/><path d="M9.992,18.992h-9C0.424,18.993,0,19.44,0,20.008c0,0.568,0.424,0.985,0.992,0.984h8v8.015   c0,0.568,0.432,1,1,1c0.568,0,1-0.432,1-1v-9c0-0.003-0.001-0.005-0.001-0.007c0-0.003,0.001-0.005,0.001-0.008   C10.992,19.434,10.55,18.992,9.992,18.992z" fill="currentColor"/><path d="M31.015,18.992h-9c-0.003,0-0.005,0.001-0.007,0.001c-0.003,0-0.005-0.001-0.008-0.001   c-0.558,0-1,0.442-1,1v9c0,0.568,0.448,0.991,1.016,0.992C22.583,29.985,23,29.56,23,28.993v-8h8.015c0.568,0,1-0.432,1-1   C32.015,19.425,31.583,18.993,31.015,18.992z" fill="currentColor"/></g><g/><g/><g/><g/><g/><g/></svg>
+            </div>
+            <p class="centerise-p"><strong>Click <a href="resume/index.html" style="color: #000000;">here</a> or on the above mousepad to launch my interactive resume game</strong></p>
+            <br><br><br><br>
+        </main>
+        <aside>
+        </aside>
+        <footer onclick="closeDrawer()">        </footer>
+        <div id="popup1">
+                <div id="closePopup"></div>
+                <div class="computer">
+                  <a href="resume/index.html"><div class="computer-screen">
+                    <br>
+                    ---------------------------
+                    <h3>Click To Launch Full Resume<span class="blink">_</span></h3>
+                    ---------------------------
+                    
+                  </div></a>
+                </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('load').style.display = "none";
+        document.getElementById('content').style.display = "block";
+    </script>
+    </body>
+</html>
