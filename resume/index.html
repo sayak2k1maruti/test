@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sayak's</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="height=device-height, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../CSS/resume.css">
+    <script src="../JS/pace.js"></script>
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/resume.js"></script>
+    <style type="text/css">
+      html{
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+    </style>
+  </head>
+  <body>
+    <div id="load" style="width: 100vw;height: 100vh;">Loadig...</div>
+    <main style="opacity:.1">
+      <div id="cloud-container">
+        <div id = "clouds"></div>
+      </div>
+      <div id = "background">
+          <div id="maountain-range"></div>
+      </div>
+      <div id="maincontent">
+        <div id="ground">
+            <div class="soil"></div>
+            <div class="grass"></div>
+          </div>
+        <div id="tree3" class="tree"></div>
+        <div id="tree4" class="tree"></div>
+        <div id="tree6" class="tree"></div>
+        <div id="sayak"></div>
+        <div id="welcome"></div>
+        <div id="tree1" class="tree"></div>
+        <div id="tree2" class="tree"></div>
+        <div id="tree5" class="tree"></div>
+        <div id="door1" class="door"></div>
+        <div id="about"></div>
+        <div id="tree7" class="tree"></div>
+        <div id="tree8" class="tree"></div>
+        <div id="tree9" class="tree"></div>
+        <div id = "signBoard-College" class="signboard">
+          <div class="signBoardText"><h2>Student</h2>Styding in National Institute of Technology Durgapur</div>
+        </div>
+       <div id="college"></div>
+       <div id="tree10" class="tree"></div>
+       <div id="tree11" class="tree"></div>
+       <div class="bump" id="bump1">
+         <div class="bump-soil"></div>
+         <div class="bump-grass"></div>
+       </div>
+       <div id = "signBoard-chandannagar" class="signboard">
+         <div class="signBoardText"><h2>City</h2>Grew up in Chandannagar</div>
+       </div>
+       <div class="bump" id="bump2">
+         <div class="bump-soil"></div>
+         <div class="bump-grass"></div>
+       </div>
+       <div id="chandannagar"><img src = "../images/Chandannagar.png" alt = "image of chandannagar"></div>
+       <div class="bump" id="bump3">
+         <div class="bump-soil"></div>
+         <div class="bump-grass"></div>
+       </div>
+       <div id="tree12" class="tree"></div>
+        <div id="tree13" class="tree"></div>
+        <div id="tree14" class="tree"></div>
+        <div id="tree15" class="tree"></div>
+        <div id="rocketLift"></div>
+       <div id="space">
+          <div id="stars"></div>
+          <div id="pls">
+              <div id="c"></div>
+              <div id="cpp"></div>
+              <div id="java"></div>
+              <div id="js"></div>
+              <div id="kotlin"></div>
+              <div id="php"></div>
+              <div id="python"></div>
+          </div>
+          <div id="skills"></div>
+          <div id="spaceship1" class="spaceships">
+            <div class="spaceship-body"></div>
+            <div class="spaceship-light"></div>
+            <div id="coding"></div>
+          </div>
+          <div id = "coding-skills">
+              <div class="spaceship-with-computer-container">
+                <div class="spaceship-computer">
+                  <div class="spaceship-computer-screen">
+                    <h3>Languages known</h3>
+                    ---------------------------------------------------
+                    <br>
+                    &nbsp;<strong>C</strong> --> ******----
+                    <br>
+                    &nbsp;<strong>C++</strong> --> *****-----
+                    <br>
+                    &nbsp;<strong>Python</strong> --> ******----
+                    <br>
+                    &nbsp;<strong>JavaScript</strong> --> *****-----
+                    <br>
+                    &nbsp;<strong>Kotlin</strong> --> ****------
+                    <br>
+                    &nbsp;<strong>PHP</strong> --> *****-----
+                    <br>
+                    &nbsp;<strong>SQL</strong> --> ******----
+                    <br>
+                    &nbsp;<strong>HTML/CSS</strong> --> ******----
+                    <br>
+                    <span class="blink">_</span>
+                  </div>
+                </div>
+                <div class = "spaceship-with-computer"></div>
+              </div>
+          </div>
+          <div id = "graphical-software-skill">
+              <div class="spaceship-with-computer-container">
+                <div class="spaceship-computer">
+                  <div class="spaceship-computer-screen">
+                    <h3>Graphic Software Known</h3>
+                    ---------------------------------------------------
+                    <br>
+                    &nbsp;<strong>Photoshop</strong> --> ********--
+                    <br>
+                    &nbsp;<strong>ILLUSTRATOR</strong> --> ***-------
+                    <br>
+                    <span class="blink">_</span>
+                  </div>
+                </div>
+                <div class = "spaceship-with-computer"></div>
+              </div>
+          </div>
+          <div id = "occupation">
+              <div class="spaceship-with-computer-container">
+                <div class="spaceship-computer">
+                  <div class="spaceship-computer-screen">
+                    <h3>Occupation</h3>
+                    --------------------------------------------------
+                    <br>
+                    <br>
+                    A student of Electronics & Communication Engineering<span class="blink">_</span>
+                  </div>
+                </div>
+                <div class = "spaceship-with-computer"></div>
+              </div>
+          </div>
+       </div>
+       <div id="toBeContinue">
+         <div id="toBeContinueText"></div>
+         <div class="blink" id="toBeContinueDots"></div>
+       </div>
+       <script>
+         $("#toBeContinue").css("left",(8000+document.body.clientHeight*11));
+       </script>
+      </div>
+      <div id="fakecontent" style="display: none;"></div>
+      <script>
+        $("#fakecontent").css('height',(16000 + document.body.clientHeight*11 + 1200));
+      </script>
+      <div id="miniSayak-container" style="left: 50%; bottom: 35px;"><div id="miniSayak"><div id="miniSayak-slides" style="left: 0px; top: 0px;"></div></div></div>
+      <div id="frames">
+        <div id="frame1"></div>
+      </div>
+      <div id="rocket-container">
+          <div id="flame"></div>
+          <div id="rocket"></div>
+      </div>
+      <div id="glitters"></div>
+      <div id="moveleft"  onmousedown="scrollWinLeft()" onmouseup="destroy()" onmouseleave="destroy()"></div>
+      <div id="moveright" onmousedown="scrollWinRight()"  onmouseout="destroy()" onmouseup = "destroy()"></div>
+    </main>
+    <a href="../index.html"><button id="backToHome">Back</button></a>
+    <script>
+        document.getElementById("moveleft").addEventListener("touchstart",scrollWinLeft, true);
+        document.getElementById("moveleft").addEventListener("touchend",destroy, true);
+        document.getElementById("moveleft").addEventListener("longtouch",scrollWinLeft, true);
+        document.getElementById("moveright").addEventListener("touchstart",scrollWinRight, true);
+        document.getElementById("moveright").addEventListener("touchend",destroy, true);
+        document.getElementById("moveright").addEventListener("longtouch",scrollWinRight, true);
+  </script>
+  </body>
+</html>
