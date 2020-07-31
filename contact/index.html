@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/contact.js"></script>
+    <script src="../JS/pace.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7P03n3yO22w5qKjxt2TPEviBOB7DHj4c&callback=initMap">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/6fd5658949.js" crossorigin="anonymous"></script>
+	<title>Stay Connected</title>
+</head>
+<body onscroll="scrollFunction()">
+	<div id="container">
+		<header></header>
+		<div id="contactHeader">
+			<div id="contactHeaderImage"></div>
+			<div id="contactHeaderText">
+				<p id = "messageBox">
+					<span>hello</span>
+				</p>
+			</div>
+		</div>
+		<br><br><br><br><br><br>
+		<main>
+			<div id="cotact-form">
+				<h1>Stay Connected . <span class="blink">.</span> <span class="blink">.</span></h1>
+				<br><br>
+				<form method="POST" onsubmit="doSubmission(); return false;" >
+					<input onchange="validate()" type="text" id = "name"size="25" placeholder="Your Name . . ." name="name"><p class="error" id="nameErr"></p> <br>
+					<input  onchange="validate()" id="email" type="text" size="25" placeholder="Email . . ." name="email"><p class="error" id="emailErr"></p><br>
+					<input onchange="validate()" id="title" type="text" size="25" placeholder="Title of Your Message . . " name="title"><br>
+					<textarea onclick ="validate()" id="message" cols="25" rows="10" placeholder="Type Your Message Here . . ." name="message"></textarea><p class="error" id="messageErr"></p><br>
+					<br><br>
+					<input  type="submit" name="submit" value="Submit" id="submit">
+				</form>
+			</div>
+			<div id="contact-details">
+				<h1>Contact Info</h1>
+				<p>Sayak Das</p>
+				<p><a href = "mailto: sayakdas2k1@gmail.com">sayakdas2k1@gmail.com</a></p>
+				<p>WestBengal,India</p>
+				<div id="map"></div>
+			</div>
+		</main>
+		<br><br><br>
+		<aside></aside>
+		<footer></footer>
+	</div>
+	</body>
+</html>

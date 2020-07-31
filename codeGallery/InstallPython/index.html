@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/code-gallery.css">
+    <link rel="stylesheet" href="python-install.css">
+    <script src="../../JS/jquery.js"></script>
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/codeGallery.js"></script>
+    <script src="https://kit.fontawesome.com/6fd5658949.js" crossorigin="anonymous"></script>
+    </head>
+	<title>Installation & setup of Python3</title>
+</head>
+<body onscroll="scrollFunction()">	
+	<div id="container">
+		<header></header>
+		<div class="front-image">
+			<div id="pythonBk"></div>
+			<div id="python"></div>
+			<h1>Installation & SetUp of <strong>Python3</strong>(latest vs)</h1>
+		</div>
+		<br id="vanish">
+		<div class="rightSide">
+			<h2><a href ="../index.html"> Index</a></h2>
+		</div>
+		<iframe src="../codeGallerySlideShow.html" id="slide-show"></iframe>
+		<main>
+			<h1>Installation of Python3 in your system</h1>
+			<br>
+			<p class="writer">
+				July 27 2020/Sayak Das
+			</p>
+			<br>
+			<div class="hr"></div>
+			<details open>
+				<summary>Is python3 pre-installed? . . <span class="blink">.</span></summary>
+				<p>
+					&nbsp;As most modern Linux distributions come with Python pre-installed, you have to check it.There are different versions of Python, but the two most popular ones are Python 2.7.x and Python 3.7.x. The x stands for the revision level and could change as new releases come out.<br>
+
+					When looking at the version number, there are usually three digits to read:<br>
+					<ul>
+    						<li>the major version
+    						<li>the minor version
+    						<li>the micro version
+    				</ul><br>
+					While major releases are not fully compatible, minor releases generally are. Version 3.6.1 should be compatible with 3.7.1 for example. The final digit signifies the latest patches and updates.
+					<br>
+					<strong>Python 2.7 and 3.7 are different applications. Software that’s written in one version often will not work correctly in another version.</strong> When using Python, it is essential to know which version an application requires, and which version you have.
+					<br>
+					<strong>Python 2 will stop publishing security updates and patches after 2020.</strong> They extended the deadline because of the large number of developers using Python 2.7. Python 3 includes a 2 to 3 utility that helps translate Python 2 code into Python 3.<br>
+					So please check your pre-installed pyhon version.
+				</p><br><br>
+				<h2>How to Check</h2>
+				<p>
+					&nbsp;At first open your terminal (in linux press <code>ctrl + alt + t</code>).In case of windows open command prompt(press <code>windows + R</code> then type <code>cmd</code>).<br>
+					</p>
+					<code class = "code-snip">
+						python --version
+					</code>
+					<br>If it doesn't work then type
+					<br>
+					<code class = "code-snip">
+						python3 --version
+					</code>
+					<br><br>
+					<p>
+						&nbsp;If python3 is pre installed in your system then you will find something like below:
+					</p><br>
+					<code class="terminal-snip">
+<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3 --version
+Python 3.8.2
+</pre>
+					</code>
+					<br><br>
+					Otherwise you will find something like below:
+					<br>
+					<code class = "terminal-snip">
+<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3 --version
+
+Command &apos;python3&apos; not found, did you mean:
+
+  command &apos;python3&apos; from deb python3
+  command &apos;python&apos; from deb python-is-python3
+
+<font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ 
+</pre>
+					</code>
+				</p>
+				<br><br>
+			</details>
+			<div class="hr"></div>
+			<details open>
+				<summary>Download & Installation . . <span class="blink">.</span></summary>
+			If python3 is not installed in your system you can install it by following some easy step:
+			<ul>
+				<li>If you are using linux OS then just open your terminal by pressing &nbsp;<code>ctrl + alt + t</code>&nbsp;
+					and type:<br>
+					<br>
+					<code class="code-snip">
+						sudo apt-get update;<br>
+						sudo apt-get install python3;
+					</code>
+					<br>
+					<p>It will install latest version of python3 (i.e. Python 3.8.2 ).For installing a specific older version of python3 (i.e python 3.7 or python3.6 etc...) type</p>
+					<br>
+					<code class="code-snip">
+						sudo apt-get update;<br>
+						sudo apt-get install python3.7;
+					</code>
+					<strong>Or,</strong><br>
+					<code class="code-snip">
+						sudo apt-get update;<br>
+						sudo apt-get install python3.6;
+					</code>
+					<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; etc..
+					<br>
+					<br>
+				</li>
+				<li>
+					If you are using windows OS then:
+					<ol>
+					 <li>At first download python binary file from the link written below:<br>
+					&nbsp;<a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+					<li>
+						Run the Python Installer once downloaded.<strong>Make sure you select the Install launcher for all users and Add Python 3.7 to PATH checkboxes.</strong><br><br>
+						<img src="../../images/python-setup.png" alt="A image of python's windows installer">
+						<br><br>
+					</li>
+					<li>
+						The next dialog will prompt you to select whether to Disable path length limit. Choosing this option will allow Python to bypass the 260-character MAX_PATH limit. Effectively, it will enable Python to use long path names.
+						<img src="../../images/python-setup-complete.png" alt="Another image of python's windows installer">
+						The Disable path length limit option <strong>will not affect any other system settings</strong>. Turning it on will resolve potential name length issues that may arise with Python projects developed in Linux.
+					</li>
+					</ol>
+					<br>
+					For additional references please go to the link written below:<br>
+					<a href="https://docs.python.org/3/using/windows.html">
+					&nbsp;https://docs.python.org/3/using/windows.html</a>
+					<br><br><br>
+				</li>
+				<li>If you are using macOS then go to the link written below:<br>
+					&nbsp;<a href="https://docs.python.org/3/using/mac.html">https://docs.python.org/3/using/mac.html</a>
+				</li>
+			</ul>
+			</details>
+			<br>
+			<div class="hr"></div>
+			<details open>
+				<summary>Introduction to Python Enviorment in Terminal . . <span class="blink">.</span></summary>
+				&nbsp;At first open your terminal (in linux press <code>ctrl + alt + t</code>).In case of windows open command prompt(press <code>windows + R</code> then type <code>cmd</code>).<br>
+				Then type:<br>
+				<code class = "code-snip">
+					python3
+				</code>
+				In case of windows type:
+				<code class = "code-snip">
+					python
+				</code>
+				<br>
+				You will find some thing like below:
+				<code class = "terminal-snip"><pre><font color = "#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3
+Python 3.8.2 (default, Apr 27 2020, 15:53:34) 
+[GCC 9.3.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 
+
+</pre><br><br><br><br><br><br><br>
+				</code>
+				<br>
+				It is Python <strong>interpreter</strong>. For more details please go through :<a href="https://docs.python.org/3/tutorial/interpreter.html">https://docs.python.org/3/tutorial/interpreter.html</a>
+				<br>
+				You can exit from here by typing <code>exit()</code>
+				<br><br>
+				<code class = "terminal-snip">
+					<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3
+Python 3.8.2 (default, Apr 27 2020, 15:53:34) 
+[GCC 9.3.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; exit()
+<font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ </pre>
+</code> 
+				<br>
+			</details>
+		<div class="hr"></div>
+		<details open>
+			<summary>Using Python Interpreter . . <span class="blink">.</span></summary>
+			&nbsp;Python is an interpreter language. It means it executes the code line by line. Python provides a Python Shell (also known as Python Interactive Shell) which is used to execute a single Python command and get the result.
+			As you can see, a Python Prompt comprising of three Greater Than symbols <code>(>>>)</code> appears. Now, you can enter a single statement and get the result. For example, enter a simple expression like <code>4 + 5</code>, press enter and it will display the result in the next line.
+			<br><br>
+			<code class = "terminal-snip">
+<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3
+Python 3.8.2 (default, Apr 27 2020, 15:53:34) 
+[GCC 9.3.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 4+5
+9
+&gt;&gt;&gt; 13*454
+5902
+&gt;&gt;&gt; 16874/66
+255.66666666666666
+&gt;&gt;&gt; 8798796578*54786867
+482058497878941126
+&gt;&gt;&gt; 545-544
+1
+&gt;&gt;&gt; 
+</pre>
+			</code> 
+			<br><br>
+			You can <code>input()</code> command to take some data from input device(i.e. keyboard)
+			<br>
+			<br>
+			<code class  = "terminal-snip">
+<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3
+Python 3.8.2 (default, Apr 27 2020, 15:53:34) 
+[GCC 9.3.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; name = input()
+Sayak
+&gt;&gt;&gt; print(&quot;Welcome &quot; + name)
+Welcome Sayak
+&gt;&gt;&gt; print(name * 5)
+SayakSayakSayakSayakSayak
+&gt;&gt;&gt; 
+</pre>
+			</code>
+		<br>
+		<br>
+		&nbsp; References: <a href="https://docs.python.org/3/tutorial/interpreter.html">https://docs.python.org/3/tutorial/interpreter.html</a>
+		<br><br>
+		</details>
+		<div class="hr"></div>
+		<details open>
+			<summary>Execute Python Script . . <span class="blink">.</span></summary>
+			&nbsp; As you have seen above, Python Shell executes a single statement. To execute multiple statements, create a Python file with extension .py, and write Python scripts (multiple statements).<br>
+			For example, enter the following statement in a text editor such as Notepad(in windows) or nano(in Linux) or whatever.
+			<br><br>
+			<code class = "code-snip">
+				<pre>
+firstName = input("What is your first name:")
+lastName = input("What is your last name:")
+print("\n\n!!!Welcome " + firstName + " " + lastName)
+				</pre>
+			</code>
+			<br>
+			Save it as name.py, navigate terminal to the folder where you have saved this file by typing <code>cd /location/of/folder</code>and execute the <code>python3 name.py</code> [for windows <code>python name.py</code>] command, as shown below. Thus, you can execute Python expressions and commands using Python Shell.
+			<br><br>
+			<code class = "terminal-snip">
+<pre><font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ python3 name.py
+What is your first name:Sayak
+What is your last name:Das
+
+
+!!!Welcome Sayak Das
+<font color="#00FF00"><b>maruti@maruti-Compaq-610</b></font>:<font color="#5C5CFF"><b>~</b></font>$ 
+
+
+</pre>
+			</code>
+		</details>	
+		<br><br>
+		<details open>
+			<summary>Want to Learn?...</summary>
+			<p>&nbsp;Python is a very popular programming language.You can learn it from anywhere.Here I'm giving link of a book which will help you definitely.
+			</p><br>
+			<a href="https://books.google.co.in/books?id=igYvDwAAQBAJ&printsec=frontcover&dq=python+crash+course&hl=en&sa=X&ved=2ahUKEwi8vMmkgeXqAhW48HMBHUgjBrEQ6AEwAHoECAQQAg#v=onepage&q=python%20crash%20course&f=false" target="_blank">
+			<div class="flip-container">
+				<div id="back-p-c-c"><br><br><strong>Python Crash Course</strong>
+					<br><br>
+					by<br>
+					Eric Matthes 
+					<br>&nbsp;&nbsp;&nbsp;<strong> . . <span class="blink">.</span></strong>
+				</div>
+				<div id="p-c-c"></div>
+			</div>
+			</a>
+		</details>
+		<br><br><br>
+		<div class="button-container">
+			<button class="filters"><a href = "../index.html">Back</a></button>
+		</div>
+		</main>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br>
+		<aside></aside>
+		<footer onclick="closeDrawer()"></footer>
+	</div>
+</body>
+</html>

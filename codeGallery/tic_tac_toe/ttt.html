@@ -1,0 +1,282 @@
+<pre>
+<font color="#00FFFF"><b>import</b></font> random
+posOfVL = [6,12]
+posOfHL = [3,6]
+matePos = []
+blankPos = []
+posOfCross = []
+posOfCircle = []
+
+demoPos = [[3,2],[9,2],[15,2],[3,5],[9,5],[15,5],[3,8],[9,8],[15,8]]
+winingPos = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> fun</b></font>():
+
+        <font color="#00FFFF"><b>for</b></font> i <font color="#00FFFF"><b>in</b></font> range(0,1000):
+                blankPage()
+                print(<font color="#00FF00"><b>&quot;\t\t\t</b></font><font color="#00CD00">                   </font><font color="#FF0000"><b> #&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t             </b></font><font color="#FF0000"><b> ############&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t           </b></font><font color="#FF0000"><b> ################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t        </b></font><font color="#FF0000"><b> ######################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t      </b></font><font color="#FF0000"><b> ##########################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t    </b></font><font color="#FF0000"><b> #############################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t   </b></font><font color="#FF0000"><b> ###############################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t  </b></font><font color="#FF0000"><b> ################################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t  </b></font><font color="#FF0000"><b> ################################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t  </b></font><font color="#FF0000"><b> ################################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t   </b></font><font color="#FF0000"><b> ##############################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t    </b></font><font color="#FF0000"><b> ############################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t      </b></font><font color="#FF0000"><b> ########################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t        </b></font><font color="#FF0000"><b> ####################&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t             </b></font><font color="#FF0000"><b> #########&quot;)</b></font>
+                print(<font color="#00FF00"><b>&quot;\t\t\t</b></font><font color="#00CD00">                  </font><font color="#FF0000"><b> #&quot;)</b></font>
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> blankPage</b></font>():
+        <font color="#00FFFF"><b>for</b></font> i <font color="#00FFFF"><b>in</b></font> range(0,25):
+                print(<font color="#00FF00"><b>&quot;\n&quot;</b></font>)
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> space</b></font>():
+        <font color="#00FFFF"><b>for</b></font> i <font color="#00FFFF"><b>in</b></font> range(0,8):
+                print(<font color="#00FF00"><b>&quot;\n&quot;</b></font>)
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> drawBoard</b></font>():
+        print(<font color="#00FF00"><b>&quot;\n\n\n&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+        <font color="#00FFFF"><b>for</b></font> i <font color="#00FFFF"><b>in</b></font> range(1,10):
+                print(<font color="#00FF00"><b>&quot;\t\t\t&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                <font color="#00FFFF"><b>for</b></font> j <font color="#00FFFF"><b>in</b></font> range(1,18):
+                        posOfCursor = [j,i]
+                        <font color="#00FFFF"><b>if</b></font> posOfCursor <font color="#00FFFF"><b>in</b></font> matePos:
+                                print(<font color="#00FF00"><b>&quot;W&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>elif</b></font> posOfCursor <font color="#00FFFF"><b>in</b></font> blankPos:
+                                print(<font color="#00FF00"><b>&quot; &quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>elif</b></font> posOfCursor <font color="#00FFFF"><b>in</b></font> posOfCross:
+                                print(<font color="#00FF00"><b>&quot;X&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>elif</b></font> posOfCursor <font color="#00FFFF"><b>in</b></font> posOfCircle:
+                                print(<font color="#00FF00"><b>&quot;@&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>elif</b></font> posOfCursor <font color="#00FFFF"><b>in</b></font> demoPos:
+                                demo = int((((j/3)-1)/2 + 1) + (((i-2)/3)*3))
+                                print(demo,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>elif</b></font> i <font color="#00FFFF"><b>in</b></font> posOfHL:
+                                <font color="#00FFFF"><b>if</b></font> j <font color="#00FFFF"><b>in</b></font> posOfVL:
+                                        print(<font color="#00FF00"><b>&quot;|&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                <font color="#00FFFF"><b>else</b></font>:
+                                        print(<font color="#00FF00"><b>&quot;_&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        <font color="#00FFFF"><b>else</b></font>:
+                                <font color="#00FFFF"><b>if</b></font> j <font color="#00FFFF"><b>in</b></font> posOfVL:
+                                        print(<font color="#00FF00"><b>&quot;|&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                <font color="#00FFFF"><b>else</b></font>:
+                                        print(<font color="#00FF00"><b>&quot; &quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                print(<font color="#00FF00"><b>&quot;\n&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+
+        print(<font color="#00FF00"><b>&quot;\n\n\n&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> putCross</b></font>(position):
+        i = 0
+        j = 0
+        <font color="#00FFFF"><b>if</b></font> position%3 == 0:
+                i = 15
+        <font color="#00FFFF"><b>elif</b></font> position % 3 == 1:
+                i = 3
+        <font color="#00FFFF"><b>else</b></font> :
+                i = 9
+        <font color="#00FFFF"><b>if</b></font> position <font color="#00FFFF"><b>in</b></font> range(1,4):
+                j = 2
+        <font color="#00FFFF"><b>elif</b></font> position <font color="#00FFFF"><b>in</b></font> range(4,7):
+                j = 5
+        <font color="#00FFFF"><b>else</b></font>:
+                j = 8
+        posOfCross.append([i,j])
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> putCircle</b></font>(position):
+        i = 0
+        j = 0
+        <font color="#00FFFF"><b>if</b></font> position%3 == 0:
+                i = 15
+        <font color="#00FFFF"><b>elif</b></font> position % 3 == 1:
+                i = 3
+        <font color="#00FFFF"><b>else</b></font> :
+                i = 9
+        <font color="#00FFFF"><b>if</b></font> position <font color="#00FFFF"><b>in</b></font> range(1,4):
+                j = 2
+        <font color="#00FFFF"><b>elif</b></font> position <font color="#00FFFF"><b>in</b></font> range(4,7):
+                j = 5
+        <font color="#00FFFF"><b>else</b></font>:
+                j = 8
+        posOfCircle.append([i,j])
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> addMatePos</b></font>(position):
+        i = 0
+        j = 0
+        <font color="#00FFFF"><b>if</b></font> position%3 == 0:
+                i = 15
+        <font color="#00FFFF"><b>elif</b></font> position % 3 == 1:
+                i = 3
+        <font color="#00FFFF"><b>else</b></font> :
+                i = 9
+        <font color="#00FFFF"><b>if</b></font> position <font color="#00FFFF"><b>in</b></font> range(1,4):
+                j = 2
+        <font color="#00FFFF"><b>elif</b></font> position <font color="#00FFFF"><b>in</b></font> range(4,7):
+                j = 5
+        <font color="#00FFFF"><b>else</b></font>:
+                j = 8
+        matePos.append([i,j])
+
+
+<font color="#00FFFF"><b>def</b></font><font color="#5C5CFF"><b> blankTable</b></font>():
+        <font color="#00FFFF"><b>for</b></font> position <font color="#00FFFF"><b>in</b></font> range(1,10):
+                i = 0
+                j = 0
+                <font color="#00FFFF"><b>if</b></font> position%3 == 0:
+                        i = 15
+                <font color="#00FFFF"><b>elif</b></font> position % 3 == 1:
+                        i = 3
+                <font color="#00FFFF"><b>else</b></font> :
+                        i = 9
+                <font color="#00FFFF"><b>if</b></font> position <font color="#00FFFF"><b>in</b></font> range(1,4):
+                        j = 2
+                <font color="#00FFFF"><b>elif</b></font> position <font color="#00FFFF"><b>in</b></font> range(4,7):
+                        j = 5
+                <font color="#00FFFF"><b>else</b></font>:
+                        j = 8
+                blankPos.append([i,j])
+
+blankPage()
+print(<font color="#00FF00"><b>&quot; _____=====*****WELCOME TO MATCH OF TIK-TAK-TOE*****=====_____\n\n\n\n&quot;</b></font>)
+print(<font color="#00FF00"><b>&quot;Press Enter to start the game.....&quot;</b></font>)
+space()
+input()
+theEnd = 0
+<font color="#00FFFF"><b>while</b></font> <font color="#00FFFF"><b>not</b></font> theEnd:
+        print(<font color="#00FF00"><b>&quot;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&quot;</b></font>)
+        print(<font color="#00FF00"><b>&quot;Enter Number of match you want...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+        userInput = input().strip()
+        flag = 1
+        <font color="#00FFFF"><b>while</b></font>(flag):
+                <font color="#00FFFF"><b>if</b></font> userInput.isdigit():
+                        <font color="#00FFFF"><b>if</b></font> int(userInput) <font color="#00FFFF"><b>in</b></font> range (1,101):
+                                flag = 0
+                        <font color="#00FFFF"><b>else</b></font>:
+                                print(<font color="#00FF00"><b>&quot;\n!!!Maximum number is 100 and minimum is 1\nEnter a valid number...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                userInput = input().strip()
+                <font color="#00FFFF"><b>else</b></font>:
+                        print(<font color="#00FF00"><b>&quot;\nEnter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        userInput = input().strip()
+        total = int(userInput)
+        name1 = input(<font color="#00FF00"><b>&quot;Name of first player...&quot;</b></font>).strip()
+        <font color="#00FFFF"><b>while</b></font> len(name1) &lt;1 :
+                print(<font color="#00FF00"><b>&quot;Please enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                name1 = input().strip()
+        name2 = input(<font color="#00FF00"><b>&quot;Name of second player...&quot;</b></font>).strip()
+        <font color="#00FFFF"><b>while</b></font> len(name2) &lt;1 :
+                print(<font color="#00FF00"><b>&quot;Please enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                name2 = input().strip()
+        <font color="#00FFFF"><b>while</b></font> (name1 == name2):
+                print(<font color="#00FF00"><b>&quot;Please enter two distinguised name...&quot;</b></font>)
+                name1 = input(<font color="#00FF00"><b>&quot;Name of first player...&quot;</b></font>).strip()
+                <font color="#00FFFF"><b>while</b></font> len(name1) &lt;1 :
+                        print(<font color="#00FF00"><b>&quot;Please enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        name1 = input().strip()
+                name2 = input(<font color="#00FF00"><b>&quot;Name of second player...&quot;</b></font>).strip()
+                <font color="#00FFFF"><b>while</b></font> len(name2) &lt;1 :
+                        print(<font color="#00FF00"><b>&quot;Please enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                        name2 = input().strip()
+        name1Score = 0
+        name2Score = 0
+        <font color="#00FFFF"><b>for</b></font> t <font color="#00FFFF"><b>in</b></font> range(0,total):<span style="background-color:#00CD00">        </span>
+                fun()
+                matePos = []
+                blankPos = []
+                posOfCross = []
+                posOfCircle = []
+                blankPage()
+                print(<font color="#00FF00"><b>&quot;Score of &quot;</b></font>+name1+<font color="#00FF00"><b>&quot;:&quot;</b></font>+str(name1Score))
+                print(<font color="#00FF00"><b>&quot;Score of &quot;</b></font>+name2+<font color="#00FF00"><b>&quot;:&quot;</b></font>+str(name2Score))
+                print(<font color="#00FF00"><b>&quot;\n Let&apos;s make a toss.....&quot;</b></font>)
+                print(<font color="#00FF00"><b>&quot;\npress Enter to see result......&quot;</b></font>)
+                space()
+                input()
+                tossIndicator = 1
+                player1 = random.choice([name1,name2])
+                player2 = name2
+                <font color="#00FFFF"><b>if</b></font> player1 == player2:
+                        player2 = name1
+                        tossIndicator = 0
+                print(<font color="#00FF00"><b>&quot;\n________________Congratulation &quot;</b></font> + player1 + <font color="#00FF00"><b>&quot; wins the toss&quot;</b></font>)
+                move1 = []
+                move2 = []
+                score1 = 0
+                score2 = 0
+                print(<font color="#00FF00"><b>&quot;As &quot;</b></font>+player1+<font color="#00FF00"><b>&quot; wins the toss he will come first and &apos;cross&apos; is your....&quot;</b></font>)
+                print(<font color="#00FF00"><b>&quot;\nPress Enter to start the game.........&quot;</b></font>)
+                space()
+                input()
+                fun()
+                blankPage()
+                count = 0
+                playerCh = 1
+                drawBoard()
+                gameOver = 0
+                <font color="#00FFFF"><b>while</b></font> <font color="#00FFFF"><b>not</b></font> gameOver:
+                        count += 1
+                        <font color="#00FFFF"><b>if</b></font> playerCh == 1:
+                                playerCh *= -1
+                                print(player1+<font color="#00FF00"><b>&quot;&apos;s turn....\nEnter the number denoting the postion....&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                turn = input().strip()
+                                flag = 1
+                                <font color="#00FFFF"><b>while</b></font> (flag) :
+                                        <font color="#00FFFF"><b>if</b></font>(turn.isdigit()):
+                                                <font color="#00FFFF"><b>if</b></font> (<font color="#00FFFF"><b>not</b></font> int(turn) <font color="#00FFFF"><b>in</b></font> range(1,10)) <font color="#00FFFF"><b>or</b></font> (int(turn) <font color="#00FFFF"><b>in</b></font> move1) <font color="#00FFFF"><b>or</b></font> (int(turn) <font color="#00FFFF"><b>in</b></font> move2):
+                                                        print(<font color="#00FF00"><b>&quot;\nPlease enter a vlid Input....&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                                        turn = input()
+                                                <font color="#00FFFF"><b>else</b></font>:
+                                                        flag = 0
+                                        <font color="#00FFFF"><b>else</b></font> :
+                                                print(<font color="#00FF00"><b>&quot;\nPlease enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                                turn = input()
+                                putCross(int(turn))
+                                move1.append(int(turn))
+                        <font color="#00FFFF"><b>else</b></font>:
+                                playerCh *= -1
+                                print(player2+<font color="#00FF00"><b>&quot;&apos;s turn....\nEnter the number denoting the postion....&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                turn = input().strip()
+                                flag = 1
+                                <font color="#00FFFF"><b>while</b></font> (flag) :
+                                        <font color="#00FFFF"><b>if</b></font>(turn.isdigit()):
+                                                <font color="#00FFFF"><b>if</b></font> (<font color="#00FFFF"><b>not</b></font> int(turn) <font color="#00FFFF"><b>in</b></font> range(1,10)) <font color="#00FFFF"><b>or</b></font> (int(turn) <font color="#00FFFF"><b>in</b></font> move1) <font color="#00FFFF"><b>or</b></font> (int(turn) <font color="#00FFFF"><b>in</b></font> move2):
+                                                        print(<font color="#00FF00"><b>&quot;\nPlease enter a vlid Input....&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                                        turn = input()
+                                                <font color="#00FFFF"><b>else</b></font>:
+                                                        flag = 0
+                                        <font color="#00FFFF"><b>else</b></font> :
+                                                print(<font color="#00FF00"><b>&quot;\nPlease enter a valid input...&quot;</b></font>,end = <font color="#00FF00"><b>&quot;&quot;</b></font>)
+                                                turn = input()
+                                putCircle(int(turn))
+                                move2.append(int(turn))
+                        drawBoard()
+                        <font color="#00FFFF"><b>for</b></font> moves <font color="#00FFFF"><b>in</b></font> winingPos:
+                                <font color="#00FFFF"><b>if</b></font>(all (move <font color="#00FFFF"><b>in</b></font> move1 <font color="#00FFFF"><b>for</b></font> move <font color="#00FFFF"><b>in</b></font> moves)):
+                                        posOfCircle = []
+                                        posOfCross = []
+                                        blankTable()
+                                        <font color="#00FFFF"><b>for</b></font> position <font color="#00FFFF"><b>in</b></font> moves:
+                                                addMatePos(position)
+                                        drawBoard()
+                                        print(<font color="#00FF00"><b>&quot;\n*********************&quot;</b></font>+player1+<font color="#00FF00"><b>&quot; wins the game*********************&quot;</b></font>)
+                                        print(<font color="#00FF00"><b>&quot;Press Enter to continue......&quot;</b></font>)
+                                        input()
+                                        score1 += 10
+                                        gameOver = 1
+                                        exit
+                                <font color="#00FFFF"><b>elif</b></font> (all (move <font color="#00FFFF"><b>in</b></font> move2 <font color="#00FFFF"><b>for</b></font> move <font color="#00FFFF"><b>in</b></font> moves)):
+                                        posOfCircle = []
+                                        posOfCross = []
+                                        blankTable()
+                                        <font color="#00FFFF"><b>for</b></font> position <font color="#00FFFF"><b>in</b></font> moves:
+                                                addMatePos(position)
+                                        drawBoard()
+                                        print(<font color="#00FF00"><b>&quot;\n*********************&quot;</b></font>+player2+<font color="#00FF00"><b>&quot; wins the game********************&quot;</b></font>)
+                                        print(<font color="#00FF00"><b>&quot;Press Enter to continue......&quot;</b></font>)
+                                        input()
+                                        score2 += 10
+                                        gameOver = 1
+                                        exit
+</pre>

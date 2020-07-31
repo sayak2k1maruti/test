@@ -1,0 +1,49 @@
+#pythonBk{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background: url("../../images/python.jpg");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+#python{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background: url("../../images/python-logo.png");
+	background-size: 100% 100%;
+	opacity: .5;
+}
+.flip-container{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform-style: preserve-3d;
+	position: relative;
+	height: 200px;
+	width: 151px;
+	margin: 10px auto;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+#p-c-c{
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background-image: url("../../images/python-crash-course.jpg");
+	background-size: 100% 100%;
+}
+#back-p-c-c{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	transform: rotateY(180deg);
+	font-family:'Comic Neue';
+	text-align: center;
+	background-color: #f6e979;
+	color: #5b0795;
+}
+.flip-container:hover{
+	transform: rotateY(180deg);
+}

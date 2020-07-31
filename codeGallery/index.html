@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/pace.js"></script>
+    <link rel="stylesheet" href="../CSS/codeGalleryIndex.css">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/article-box.css">
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/article-box.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/codeGalleryIndex.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/6fd5658949.js" crossorigin="anonymous"></script>
+	<title>Code Gallery @Sayak</title>
+</head>
+<body onscroll="scrollFunction()">
+	<div id="container">
+		<header></header>
+		<aside></aside>
+		<div id="slide-show"></div>
+		<form id = "form" onsubmit="submitForm(this);return false;">
+			<button type="submit"><i class="fa fa-search"></i></button>
+			<input id = "search" placeholder="Search By Tags . . ." type="text" name="search" onchange="submitForm(this)" onsubmit="submitForm(this);return false;">
+		</form>
+		<div class="articles-list">
+			<div class="button-container">
+			<button class="filters pressed" onclick="doChange(this,0)">All</button>
+			<button class="filters" onclick="doChange(this,1)">Codes</button>
+			<button class="filters" onclick="doChange(this,2)">Articles</button>
+			</div>
+			<br>
+			<br>
+			<div class="article-box-container">	</div>
+			<div class="button-container">
+				<button id="loadMore" class="filters" onclick="loadMore(this)">Load More . . .</button>
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<footer></footer>
+	</div>
+	</body>
+</html>

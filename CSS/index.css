@@ -1,0 +1,463 @@
+#content{
+    display: none;
+}
+#load{
+    width: 100vh;
+    width: 100vw;
+}
+.backgroundContainer{
+    overflow: hidden;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110% 99%;
+    transition: background-position;
+    opacity: .95;  
+}
+.welcomeText{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    top: 50%;
+    margin-top: -10vmax;
+    position: relative;
+    font-size: 5vmax;
+    font-family: 'Comic Neue', cursive;
+    color: #ffffff;
+    width: -moz-fit-content;
+    font-weight: bolder;
+}
+.welcomeText h1{
+    height: 10vmax;
+    overflow: hidden;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0px auto;
+}
+@media screen and (max-width:768px){
+    .welcomeText{
+        font-size: 1.6rem;
+    }
+    .welcomeText h1{
+        height: 3.2rem;
+        overflow: visible;
+    }
+}
+.welcomeText p{
+    text-align: center;
+}
+.animatingBackground1{
+    background-color: rgba(0, 0, 0, 0.651);
+    z-index: -1;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    animation-name: textAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+}
+.animatingBackground2{
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    height: 40%;
+    width: 56%;
+    margin:0px 10%;
+    animation-name: textAnimationRev;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.welcomeText:hover .animatingBackground1{
+    animation-name: textAnimationRev2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+.w1{
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.w2{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.w3{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.w4{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.w5{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.w6{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+.w7{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.w8{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.w9{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+.w10{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+.w11{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+.w12{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 5.5s;
+}
+.w13{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+.w14{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+}
+.w15{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+.w16{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+}
+.w17{
+    visibility: hidden;
+    animation-name: animatingWord;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+@keyframes textAnimation{
+    0% {width: 0%;}
+    100%{width: 100%;}
+}
+@keyframes textAnimationRev{
+    0% {margin-left: 100%;}
+    100%{margin-left: 22%;}
+}
+@keyframes textAnimationRev2{
+    0% {margin-left: 100%;}
+    100%{margin-left: 0%;}
+}
+@keyframes animatingWord{
+    0%{margin-left: 100%;visibility: visible;}
+    100%{margin-left: 0%;visibility: visible;}
+}
+main{
+    height: fit-content;
+    width: 100vw;
+}
+@media all and (max-width:768px){
+    main{
+        height: fit-content;
+        width: 100vw;
+        padding-bottom: 5vh;
+    }
+}
+#aboutMe{
+    width: 50vw;
+    display: block;
+    margin: 0px auto;
+    margin-top: 25vh;
+    font-size: 10vw;
+}
+#aboutMe h1{
+    font-family: "Worstveld Sling W05 Regular";
+    font-size: 10vw;
+    text-align: center;
+}
+#aboutMe p{
+    font-family: 'Comic Neue', cursive;
+    text-align: justify;
+    font-size: .25em;
+}
+#aboutMe a{
+    text-decoration: none;
+    opacity: .5;
+    color: inherit;
+    background: transparent;
+    transition-property: background;
+    transition-duration: 1s;
+}
+#aboutMe a:hover{
+    background-color: #6b686896;
+}
+@media (max-width:760px){
+    #aboutMe{
+        width: 80vw;
+        display: block;
+        margin: 0px auto;
+        margin-top: 25vh;
+        font-size: 15vw;
+    }
+    #aboutMe h1{
+        font-size: 20vw;
+        text-align: center;
+    }
+}
+#lappi-container{
+    position: relative;
+    width: 65vw;
+    height: 36vw;
+    /*margin: 100px auto;*/
+    margin-top: 200px;
+    margin-bottom: 5px;
+    left: 50vw;
+    margin-left:-32.5vw;
+    background-image: url("../images/lappi.png");
+    background-size: 100% 100%;
+}
+#lappi-frame{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/lappi.png");
+    background-size: 100% 100%;
+}
+div iframe{
+    position: absolute;
+    z-index: 1000;
+    width: 94vw;
+    height: 54vw;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: -19.5%;
+    margin-left: -22.5%;
+    transform: scale(.5);
+    -webkit-transform:scale(0.5);
+    -moz-transform:scale(0.5);
+}
+#launchResume{
+    width: 6vw;
+    height: 5.4vw;
+    color: #b50505;
+    background: transparent;
+    margin-top: 30.4vw;
+    margin-left: 23vw;
+    transform: rotateX(64.8deg);
+    padding: 0px 6vw;
+}
+#launchResume:hover{
+    background-color: #000000;
+    padding: 0px 6vw;
+    color: #ffffff;
+}
+#fullscreenResume{
+    position: absolute;
+    width: 3vw;
+    height: 2.7vw;
+    color: #b50505;
+    background: transparent;
+    bottom: 2px;
+    right: 2px;
+}
+.computer{
+  position: absolute;
+  width: 439px;
+  height: 296px;
+  left: 50%;
+  margin-left: -219.5px;
+  background-size: 100% 100%;
+  background-image: url("../images/spaceshipComputerScreen.png");
+}
+.computer-screen {
+    margin-left: 35px;
+    margin-top: 25px;
+    height: 190px;
+    width: 370px;
+    font-family: monospace;
+    color: #000000;
+}
+.spaceship-computer-screen h3{
+  text-align: center;
+}
+#popup1{
+    display: none;
+    z-index: 2000;
+    position: fixed;
+    bottom: 0px;
+    right: 50%;
+    height: 296px;
+    width: 439px;
+    margin-right: -219.5px; 
+    bottom: 50%;
+    margin-bottom: -148px;
+}
+.blink{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#closePopup{
+    height: 30px;
+    width: 30px;
+    background-image: url("../images/close.png");
+    background-size: cover;
+    margin-left: 100%;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+#closePopup:hover{
+    background-color:blue;
+    height: 50px;
+    width: 50px;
+}
+@media all and (max-width: 378px){
+.centerise-p {
+    font-size: .9rem;
+}
+}
+@media all and (max-width: 768px){
+#lappi-container {
+    position: relative;
+    width: 65vw;
+    height: 36vw;
+    margin: 100px auto;
+    margin-top: 200px;
+    margin-bottom: 10vw;
+    left: 50vw;
+    margin-left: -32.5vw;
+    background-image: url("../images/lappi.png");
+    background-size: 100% 100%;
+    transform: scale(1.5);
+}
+div iframe {
+    position: absolute;
+    z-index: 1000;
+    width: 133vw;
+    height: 76vw;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: -35.9%;
+    margin-left: -52.6%;
+    -webkit-transform: scale(.25);
+    -moz-transform: scale(.25);
+    transform: scale(0.35);
+}
+.computer{
+  position: absolute;
+  width: 250px;
+  height: 169px;
+  left: 50%;
+  margin-left: -125px;
+  background-size: 100% 100%;
+  background-image: url("../images/spaceshipComputerScreen.png");
+}
+.computer-screen {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 14.2px;
+    height: 108.2px;
+    width: 210.7px;
+    font-family: monospace;
+    color: #000000;
+}
+.spaceship-computer-screen h3{
+  text-align: center;
+  font-size: 56%;
+}
+#popup1{
+    display: none;
+    z-index: 2000;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    height: 169px;
+    width: 250px;
+    margin-left: -125px; 
+    bottom: 50%;
+    margin-bottom: -84.3px;
+}
+}
+@keyframes blink{
+    0%{opacity: 100%}
+    100%{opacity: 0%}
+}

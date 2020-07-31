@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html  lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/code-gallery.css">
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <script src="../../JS/jquery.js"></script>
+    <script src="../../JS/script.js"></script>
+    <script src="../../JS/codeGallery.js"></script>
+    <script src="https://kit.fontawesome.com/6fd5658949.js" crossorigin="anonymous"></script>
+    </head>
+	<title>Tic-Tac-Toe</title>
+</head>
+<body onscroll="scrollFunction()">	
+	<div id="container">
+		<header></header>
+		<div class="front-image">
+			<div id="tic-tac-toe-bk"></div>
+			<div id="tic-tac-toe1"></div>
+			<h1>Simple Terminal Game Using Python</h1>
+		</div>
+		<br id="vanish">
+		<div class="rightSide">
+			<h2><a href = "../index.html">Index</a></h2>
+		</div>
+		<iframe src="../codeGallerySlideShow.html" id="slide-show"></iframe>
+		<main>
+			<h1>Building Tic-Tac-Toe Game Using Python</h1>
+			<br>
+			<p class="writer">
+				July 27 2020/Sayak Das
+			</p>
+			<br>
+			<div class="hr"></div>
+			<details open>
+				<summary>What is Terminal App?</summary>
+			A terminal application is an application that runs in Terminal or command Line. It interact with users via command line and also shows it output via terminal.To run a terminal application user needs to type some command in terminal/commandLine.Here we are goimg to make a simple terminal tic-tac-toe game by using python.
+			<br> <br><br>
+			</details>
+			<div class="hr"></div>
+			<details open>
+				<summary>Installing Python3 in your system</summary>
+				<p>
+					&nbsp;As my code is written in python3 if python is not installed in your system you can install it.I am giving a link of my article about how to install python3(latesr version) in linux and windows.Here is the link:<br>
+					<a href="../InstallPython/index.html" target="_blank ">Installation & SetUp of latest version of<strong>Python3</strong> in your system</a>
+				</p>
+				<br><br>
+			</details>
+			<dir class="hr"></dir>
+		 	<details open>
+			<summary>About my <strong>Tic-Tac-Toe</strong> Application:</summary>
+			<p>&nbsp;It is a simple 2 players terminal application. The game starts like below:</p>
+			<br><br>
+			<code class = "terminal-snip">
+				<pre>
+
+ _____=====*****WELCOME TO MATCH OF TIK-TAK-TOE*****=====_____
+
+
+
+
+Press Enter to start the game.....
+
+
+
+</pre>
+			</code>
+			<br><br>
+			<p>&nbsp;
+			Then it asks how many numbers of match you want to play and name of two opponent palyers.<br><br></p>
+			<code class = "terminal-snip">
+<pre>Enter Number of match you want...10
+Name of first player...Sayak Das
+Name of second player...  </pre>
+			</code><br><br>
+			<p>&nbsp;
+			Then my application makes a toss and choose a random player to start first
+			<br><br></p>
+			<code class = "terminal-snip">
+<pre> Let&apos;s make a toss.....
+
+press Enter to see result......
+
+
+________________Congratulation Sayak Das wins the toss
+As Sayak Das wins the toss he will come first and &apos;cross&apos; is your....
+
+Press Enter to start the game.........
+
+</pre>
+			</code>
+			<br><br>
+			<p>&nbsp;
+			Then the game starts. You can choose your position by simple entering respective position number from keyboard<br><br></p>
+			<code class = "terminal-snip">
+<pre>			     |     |     
+			  1  |  2  |  3  
+			_____|_____|_____
+			     |     |     
+			  4  |  5  |  6  
+			_____|_____|_____
+			     |     |     
+			  7  |  8  |  9  
+			     |     |     
+
+
+
+Sayak Das&apos;s turn....
+Enter the number denoting the postion....5
+
+
+
+			     |     |     
+			  1  |  2  |  3  
+			_____|_____|_____
+			     |     |     
+			  4  |  X  |  6  
+			_____|_____|_____
+			     |     |     
+			  7  |  8  |  9  
+			     |     |     
+
+
+
+Maruti&apos;s turn....
+Enter the number denoting the postion....1
+
+
+
+			     |     |     
+			  @  |  2  |  3  
+			_____|_____|_____
+			     |     |     
+			  4  |  X  |  6  
+			_____|_____|_____
+			     |     |     
+			  7  |  8  |  9  
+			     |     |     
+
+
+
+Sayak Das&apos;s turn....
+Enter the number denoting the postion....
+</pre>
+			</code>
+			<br><br>
+			<p>&nbsp;
+			After all sets the winner will be decided by computer
+			</p><br><br>
+			<code class  = "terminal-snip">
+<pre>
+
+		_____=====*****MARUTI is WINNER*****=====_____
+
+
+
+</pre>
+			</code>
+			<br><br>
+			<p>
+				Here is a short video of my application:
+				<video width="95%" style="padding: 2.5%;" controls>
+					<source src="../../video/ttt.mp4" type="video/mp4">
+						Sorry some error occurs while playing it..<span class="blink"> .</span>
+				</video>
+			</p>
+		</details>
+		<dir class = "hr"></dir>
+		<details open>
+			<summary>Play yourself</summary>
+			<p>
+				Below accually you can play my game.It may work slowly due to internet problem.
+				<br>
+				Just click on <img style="height: 2rem;" src="../../images/runButton.png" alt="run_button"> button below to start the game
+				<br>
+				<strong>Let's Play . .<span class="blink"> .</span></strong>
+				<br><br>
+				<iframe height="500px" width="98%" style="padding: 1%;" src="https://repl.it/@SAYAKDAS1/NecessaryThistleReference?lite=true&outputonly=1" scrolling="no" frameborder="5px" outputonly=1 allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+			</p>
+		</details>
+		<br><br>
+		<div class="hr"></div>
+		<details open>
+			<summary>Python code of my application . . <span class="blink">.</span></summary>
+			<br>
+			<code class = "terminal-snip" id="ttt-code" style="height: 90vh; overflow: scroll;">
+
+			</code>
+			<br>
+			<p>&nbsp;You can <strong>download</strong> the code from here : <a href="tic-tac-toe.py">tic-tac-toe.py</a>
+			</p>
+		</details>
+		<br><br><br>
+		<div class="button-container">
+			<button class="filters"><a href = "../index.html">Back</a></button>
+		</div>
+		</main>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br>
+		<aside></aside>
+		<footer onclick="closeDrawer()"></footer>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ttt-code").load("ttt.html")
+		})
+	</script>
+</body>
+</html>

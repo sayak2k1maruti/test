@@ -1,0 +1,16 @@
+#tic-tac-toe-bk{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background: url("../../images/tic-tac-toe-bk.jpg");
+	background-size: 100% 100%;
+	opacity: .5;
+}
+#tic-tac-toe1{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background: url("../../images/tic-tac-toe.png");
+	background-size: 100% 100%;
+	opacity: .5;
+}

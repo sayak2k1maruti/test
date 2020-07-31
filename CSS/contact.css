@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+		body{
+			background: #00000099;
+		}
+		header{
+			height: 0px;
+		}
+		nav{
+			z-index: 1000;
+		}
+		#contactHeader{
+			height: 50vh;
+			position: relative;
+			width: 100vw;
+		}
+		#contactHeader div{
+			position: absolute;
+			height: inherit;
+			width: inherit;
+			background-size: 100% 100%;
+		}
+		#contactHeaderImage{
+			background: url("../images/contact.jpg");
+		}
+		#contactHeaderText{
+			background: #00000099;
+			color: #000;
+			font-family:"Worstveld Sling W05 Regular";
+			text-align: center;
+		}
+		#messageBox{
+			font-size: 280px;
+			position: absolute;
+			width: 450px;
+			height: 300px;
+			left: 50%;
+			top: 10vh;
+			margin-left: -225px;
+			opacity: 0.85;
+			background-image:  url("../images/message-box.png");
+			background-size: 100% 100%;
+		}
+		@media all and (max-width: 455px){
+		#messageBox{
+			font-size: 140px;
+			width: 225px;
+			height: 150px;
+			left: 50%;
+			margin-left: -112.5px;
+		}
+		}	
+		#cotact-form{
+			width: 50vw;
+			margin-left: 10vw;
+			display: inline-block;
+		}
+		#cotact-form h1{
+			font-family:"Worstveld Sling W05 Regular";
+			font-size: 4.5rem;
+			color: #ffff14;
+			text-shadow: 10px 10px 10px #000;
+		}
+		span{
+			line-height: 100%;
+		}
+		.blink{
+			animation: blink .5s ease-in infinite;
+		}
+		@keyframes blink{
+			from{opacity: 1;}
+			to{opacity: 0;}
+		}
+		textarea,input{
+			width: 90%;
+			font-size: 1.2rem;
+			margin: 10px 0px;
+			padding: 12px;
+			background: #e1e0e0;
+			border-radius: 20px;
+			border: solid 3px #054a37;
+			box-shadow: 10px 10px 10px #000;
+			transition: all .25s linear;
+			font-family: 'Comic Neue';
+		}
+		input:hover{
+			box-shadow: 0px 0px 0px;
+			background-color: #fff;
+			transform: scale(1.1);
+		}
+		input:focus{
+			box-shadow: 0px 0px 0px;
+			border: solid 3px #700fd0;
+			background-color: #fff;
+			transform: scale(1.1);
+		}
+		textarea{
+			border-radius: 5px;
+		}
+		textarea:hover{
+			box-shadow: 0px 0px 0px;
+			background-color: #fff;
+			transform: scale(1.1);
+		}
+		textarea:focus{
+			background: #fff;
+			box-shadow: 0px 0px 0px;
+			border: solid 3px #700fd0;
+			transform: scale(1.1);
+		}
+
+		#submit{
+			display: none;
+			margin: 10px 0px;
+	    	width: 100px;
+	    	height: 50px;
+	    	background: #0d2866b5;
+	    	color: #FFF;
+	    	border-radius: 25px;
+    		border: 0px;
+    		box-shadow: -10px 11px 15px #000;
+    		position: relative;
+    		margin-left: -50px;
+    		left: 50%;
+		}
+		#submit:hover{
+			box-shadow: 0px 0px 0px;
+			background: #021540eb;
+			font-variant: small-caps;
+		}
+		#submit:focus{
+			box-shadow: 0px 0px 0px;
+			background: #000;
+			font-variant: small-caps;
+		}
+		#map {
+  			height: 25vw;  /* The height is 400 pixels */
+  			width: 100%;  /* The width is the width of the web page */
+ 		}
+ 		#contact-details{
+ 			width: 30vw;
+ 			right: 3vw;
+ 			position: absolute;
+ 			display: inline-block;
+ 			top: 90vh;
+ 			text-align: center;
+ 			background: #ffffff99;
+ 			padding: 10px;
+ 			box-shadow: 10px 10px 10px #000,-10px 10px 10px #000;
+ 			transition: all .2s linear;
+ 			font-family: 'Comic Neue';
+ 		}
+ 		#contact-details h1{
+ 			color: #040448;
+ 		}
+ 		#contact-details:hover{
+ 			transform: scale(1.15);
+ 		}
+ 		.error{
+ 			color: #9b0808;
+ 			background: #accc10;
+			width: 85%;
+			margin: auto;
+    		margin-top: auto;
+			margin-top: 6px;
+			font-family: 'Comic Neue';
+			box-shadow: 25px 25px 8px #000;
+			border-radius: 10px;
+			transition: all .25s linear;
+			text-align: center;
+			font-size: 1.2rem;
+		}
+		.error:hover{
+			transform: scale(1.05);
+		}
+ 		@media all and (max-width: 950px){
+ 			#cotact-form{
+ 				width: 70vw;
+ 				margin: auto;
+ 				display: block;
+ 			}
+ 			#contact-details{
+ 				width: 70vw;
+ 				margin: auto;
+ 				display: block;
+ 				position: static;
+ 				margin-top: 5vh;
+ 			}
+ 		}
+ 		@media all and (max-width: 768px){
+ 			#cotact-form{
+ 				width: 90vw;
+ 			}
+ 			#contact-details{
+ 				width: 90vw;
+ 			}
+ 		}
+ 		@media all and (max-width: 768px){
+ 			#cotact-form{
+ 				width: 90vw;
+ 			}
+ 			#cotact-form h1{
+ 				font-size: 4rem;
+ 			}
+ 			#contact-details{
+ 				width: 90vw;
+ 			}
+ 			#map{
+ 				height: 40vh;
+ 			}
+ 		}
+ 		@media all and (max-width: 378px){
+ 			#cotact-form{
+ 				width: 95vw;
+ 			}
+ 			#cotact-form h1{
+ 				font-size: 4.5rem;
+ 			}
+ 			input,textarea{
+ 				margin-left: 5px;
+ 				padding: 10px;
+ 				border-radius: 15px;
+ 				border: 0px;
+ 			}
+ 		}
